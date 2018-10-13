@@ -1,0 +1,29 @@
+Contract:
+    packages:
+        - sqlalchemy
+    layers:
+        - testing
+        - dialects
+        - connectors
+        - databases
+        - ext
+        - orm
+        - schema
+        - events
+        - engine
+        - pool
+        - types
+        - sql
+        - interfaces
+        - event
+        - inspection
+        - processors
+        - util
+        - exc
+        - log
+    whitelisted_paths:
+        - sqlalchemy.exc <- sqlalchemy.util.compat
+        - sqlalchemy.exc <- sqlalchemy.sql.util
+        - sqlalchemy.orm.util <- sqlalchemy.testing.util
+        - sqlalchemy.engine.url <- sqlalchemy.dialects
+        - sqlalchemy.sql.naming <- sqlalchemy.events
